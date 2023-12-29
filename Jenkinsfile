@@ -8,7 +8,7 @@ pipeline {
                     // Azure service principal credentials defined in Jenkins Credentials
                     withCredentials([azureServicePrincipal(credentialsId: 'c9526555-396b-4567-8c14-990e601de11f')]) {
                         // Log in to Azure using Azure CLI
-                        sh 'az login --service-principal -u $559223e3-fe8f-4f26-b9f6-e38948d64e55 -p $AuT8Q~-yGonAqZ9hBO2MG1KR4zq.XTWmptcjQac- -t $29c72239-d4e9-4412-baca-f8aa9643f6fb'
+                        bat 'az login --service-principal -u $559223e3-fe8f-4f26-b9f6-e38948d64e55 -p $AuT8Q~-yGonAqZ9hBO2MG1KR4zq.XTWmptcjQac- -t $29c72239-d4e9-4412-baca-f8aa9643f6fb'
                     }
                 }
             }
